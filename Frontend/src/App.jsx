@@ -30,7 +30,7 @@ function App() {
     try {
 
       const response = await axios.post(
-        "https://vitto-msme-backend.onrender.com/",
+        "https://vitto-msme-backend.onrender.com/api/application",
         formData
       );
 
