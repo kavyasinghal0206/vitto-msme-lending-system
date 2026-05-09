@@ -2,48 +2,51 @@
 
 A full-stack MSME loan evaluation system that checks loan eligibility using rule-based credit scoring.
 
-## Features
+---
+
+# Features
 
 - Loan approval/rejection system
 - Credit score calculation
 - PAN validation
-- MongoDB data storage
+- MongoDB Atlas database integration
 - Timestamp tracking
 - Responsive UI
-- Cloud deployment
+- Full cloud deployment
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Frontend
+## Frontend
 - React.js
 - Axios
 - CSS
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 
-### Database
+## Database
 - MongoDB Atlas
 - Mongoose
 
-### Deployment
+## Deployment
 - Vercel (Frontend)
 - Render (Backend)
 
 ---
 
-## Loan Decision Logic
+# Loan Decision Logic
 
-The system evaluates applications using:
+The system evaluates loan applications based on:
 
-- Loan amount vs revenue
+- Loan amount vs monthly revenue
 - EMI vs monthly revenue
-- Tenure risk analysis
+- Short tenure risk analysis
 
-Applications are:
+Applications are automatically:
+
 - APPROVED
 - REJECTED
 
@@ -51,11 +54,11 @@ based on generated credit score.
 
 ---
 
-## API Endpoint
+# API Endpoint
 
-POST `/api/application`
+## POST `/api/application`
 
-### Request Body
+### Sample Request Body
 
 ```json
 {
@@ -71,28 +74,51 @@ POST `/api/application`
 
 ---
 
-## Deployment Links
+# Deployment Links
 
-### Frontend
-(Add your Vercel URL here)
+## Frontend
+https://vitto-msme-lending-system-frontend.vercel.app/
 
-### Backend
-(Add your Render URL here)
+## Backend
+https://vitto-msme-backend.onrender.com/
 
-### GitHub Repository
-(Add your GitHub repo link here)
+## GitHub Repository
+https://github.com/kavyasinghal0206/vitto-msme-lending-system
 
 ---
 
-## Local Setup
-
-### Clone Repository
+# Project Structure
 
 ```bash
-git clone <repo-link>
+Vitto Lending System/
+│
+├── Backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+├── Frontend/
+│   ├── src/
+│   └── public/
+│
+└── README.md
 ```
 
-### Backend Setup
+---
+
+# Local Setup
+
+## Clone Repository
+
+```bash
+git clone https://github.com/kavyasinghal0206/vitto-msme-lending-system.git
+```
+
+---
+
+## Backend Setup
 
 ```bash
 cd Backend
@@ -100,7 +126,9 @@ npm install
 npm start
 ```
 
-### Frontend Setup
+---
+
+## Frontend Setup
 
 ```bash
 cd Frontend
@@ -110,16 +138,46 @@ npm run dev
 
 ---
 
-## Environment Variables
+# Environment Variables
 
-Create `.env` file inside Backend:
+Create a `.env` file inside Backend:
 
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb+srv://singhalkavya1111_db_user:nhZ23GcQ2LXb98K3@cluster1.3j24ill.mongodb.net/?appName=Cluster1
 ```
 
 ---
 
-## Author
+# Database Features
+
+- Application data storage
+- Auto-generated timestamps
+- Credit score tracking
+- Loan decision storage
+
+---
+
+# Validation Features
+
+- PAN number validation
+- Uppercase PAN formatting
+- Required field validation
+
+---
+
+# Cloud Deployment
+
+## Frontend Deployment
+- Hosted on Vercel
+
+## Backend Deployment
+- Hosted on Render
+
+## Database
+- Hosted on MongoDB Atlas
+
+---
+
+# Author
 
 Kavya Singhal
