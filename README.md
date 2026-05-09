@@ -143,7 +143,7 @@ npm run dev
 Create a `.env` file inside Backend:
 
 ```env
-MONGO_URI=mongodb+srv://singhalkavya1111_db_user:nhZ23GcQ2LXb98K3@cluster1.3j24ill.mongodb.net/?appName=Cluster1
+MONGO_URI=hehe#
 ```
 
 ---
